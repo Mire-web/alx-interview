@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 Description: Implementation of pascal's Triangle in python
 Author: Mirey_dev (mire-web)
