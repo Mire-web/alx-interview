@@ -1,0 +1,36 @@
+#!/usr/bin/python3
+"""
+Determine the minimum number of operations that will be performed
+to get the required result
+"""
+
+
+def copyAll(opCount):
+    return opCount + 1
+
+def paste(num, adr, opC):
+    if opC % 3 == 0:
+        adr = num
+    num = num + adr
+    opC = opC + 1
+    return num, opC
+
+def minOperations(n):
+    maxOp = n
+    initialOp = 1
+    opCount = 0
+    adder = 1
+    if n <= 0:
+        return 0
+    while initialOp < maxOp:
+        opCount = copyAll(opCount)
+        initialOp, opCount = paste(initialOP, adder, opCount)
+        initialOP, opCount = paste(initialOp, adder,opCount)
+    return opCount
+
+
+if __name__=='__main__':
+    print(minOperations(9))
+    print(minOperations(12))
+    print(minOperations(4))
+    print(minOperations(5))
