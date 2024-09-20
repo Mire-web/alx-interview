@@ -13,7 +13,4 @@ def print_triangle(triangle):
 
 
 if __name__ == "__main__":
-    print_triangle(pascal_triangle(5))
-    print_triangle(pascal_triangle(10))
-    print_triangle(pascal_triangle(0))
-    print_triangle(pascal_triangle(-1))
+    print_triangle(pascal_triangle(1000))
