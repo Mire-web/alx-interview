@@ -4,6 +4,7 @@ Solving the island perimeter challenge in python
 using DFS
 """
 def island_perimeter(grid):
+    """ Calculate Island Perimeter """
     perimeter = 0
     for row in range(len(grid)):
         for col in range(row):
