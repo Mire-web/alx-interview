@@ -3,6 +3,8 @@
 Solving the island perimeter challenge in python
 using DFS
 """
+
+
 def island_perimeter(grid):
     """ Calculate Island Perimeter """
     perimeter = 0
@@ -19,4 +21,3 @@ def island_perimeter(grid):
                 if col < len(grid[0]) and col > grid[row][col + 1]:
                     perimeter -= 1
     return perimeter * 2
-
